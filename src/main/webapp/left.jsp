@@ -51,22 +51,36 @@
     </script>
 </head>
 <body>
-<form>
-    <div class="form-group">
-        <label for="username">ID :</label>
-        <input type="text" id="username" name="username" required>
-    </div>
+<c:choose>
+    <c:when test="${not empty sessionScope.userId}">
+        <h1>${sessionScope.userId} 님 환영합니다</h1>
+        <p>로그인 시간 : ${sessionScope.loginTime}</p>
+    </c:when>
 
-    <div class="form-group">
-        <label for="password">PWD :</label>
-        <input type="password" id="password" name="password" required>
-    </div>
+    <c:otherwise>
+        <form action="login" method="post">
+            <div class="form-group">
+                <label for="username">ID :</label>
+                <input type="text" id="username" name="username" required>
+            </div>
 
-    <%-- required 를 사용하면 사용자가 해당 필드를 비워두고 폼을 제출하려고 할 경우, 브라우저가 경고한다 --%>
-    <div>
-        <button type="submit">로그인</button>
-        <button type="button" onClick="clearFields()">취소</button>
-    </div>
-</form>
+            <div class="form-group">
+                <label for="password">PWD :</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+                <%-- required 를 사용하면 사용자가 해당 필드를 비워두고 폼을 제출하려고 할 경우, 브라우저가 경고한다 --%>
+            <div>
+                <button type="submit">로그인</button>
+                <button type="button" onClick="clearFields()">취소</button>
+            </div>
+        </form>
+    </c:otherwise>
+</c:choose>
+
+
+
+
+
 </body>
 </html>
