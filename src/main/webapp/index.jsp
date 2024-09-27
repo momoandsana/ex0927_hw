@@ -18,7 +18,7 @@
 }
 </style>
 </head>
-<body>s
+<body>
 
 <table>
   <tr>

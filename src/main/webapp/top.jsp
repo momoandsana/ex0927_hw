@@ -9,8 +9,22 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        .nav-link{
+            color:blue;
+            text-decoration:none;
+        }
+        .nav-link:hover{
+            text-decoration:underline;
+            /*호버시 밑줄*/
+        }
+    </style>
 </head>
 <body>
-
+    <nav>
+        <a class="nav-link" href="">게시판</a>
+        <a class="nav-link" href="">MyPage</a>
+        <a class="nav-link" href="">Q&A</a>
+    </nav>
 </body>
 </html>
