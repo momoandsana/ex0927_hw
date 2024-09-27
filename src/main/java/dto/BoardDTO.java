@@ -1,4 +1,4 @@
-package kosta.dto;
+package dto;
 
 public class BoardDTO {
    private int no;
