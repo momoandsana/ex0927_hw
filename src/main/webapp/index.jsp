@@ -26,11 +26,16 @@
       height: 430px;
       border: none;
     }
-    h3 {
-      background-color: orange;
-    }
+    /*h3 {*/
+    /*  background-color: orange;*/
+    /*}*/
     table tr:nth-child(2) > td:nth-child(1) {
       width: 200px;
+    }
+
+    td[colspan]{
+      border-top:1px solid black !important;
+      border-bottom:1px solid black !important;
     }
   </style>
 </head>
