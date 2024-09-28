@@ -39,6 +39,10 @@
             width: 150px;
             height: auto;
         }
+
+        a{
+            margin-top : 10px;
+        }
     </style>
 
     <script>
@@ -70,7 +74,7 @@
         <p>로그인 시간 : ${sessionScope.creationTime}</p>
         <img src="images/cat.jpg" alt="고양이">
         <p>
-            <a href="#">로그아웃</a>
+            <a href="#" class="btn btn-warning">로그아웃</a>
         </p>
     </c:when>
 
