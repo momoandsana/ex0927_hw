@@ -50,8 +50,7 @@
         $(function () {
             $("a").click(function () {
                 if (confirm("로그아웃할래?")) {
-                    // 로그아웃 시 left.jsp로 리다이렉트된 후 center 프레임도 새로고침
-                    window.parent.frames["center"].location.reload();
+                    // 로그아웃 요청
                     location.href = "${pageContext.request.contextPath}/logout";
                 }
             });

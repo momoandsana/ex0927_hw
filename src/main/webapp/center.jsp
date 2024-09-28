@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <style>
-        .table-bordered td,.table-bordered th {
+        .table-bordered td, .table-bordered th {
             border: 2px solid black;
             text-align: center;
         }
