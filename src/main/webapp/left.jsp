@@ -22,7 +22,7 @@
         form{
             display:flex;
             flex-direction:column;
-            width:220px;
+            width:150px;
         }
         /*아이디 입력 label 과 input 값을 그룹으로 묶어서 한 줄로*/
 
@@ -40,7 +40,7 @@
         /*label ID, PWD 주변 공간 조정*/
 
         input[type="text"],input[type="password"]{
-            width:100px;
+            width:80px;
             padding:5px;
         }
 
