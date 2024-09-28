@@ -47,7 +47,7 @@ public class LoginServlet extends HttpServlet {
         }
         else
         {
-            request.setAttribute("errMsg","님 정보를 확인해주세요");
+            request.setAttribute("errMsg","아이디나 비밀번호가 틀렸습니다");
             request.getRequestDispatcher("/error/error.jsp")
                     .forward(request, response);
         }
