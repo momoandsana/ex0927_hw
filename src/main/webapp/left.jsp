@@ -40,13 +40,13 @@
             width:100px;
             padding:5px;
         }
-        /*입력칸의 크기 조정*/
+
     </style>
 
     <script>
         function clearFields() {
-            $("#username").val("");  // jQuery를 사용하여 username 필드 지우기
-            $("#password").val("");  // jQuery를 사용하여 password 필드 지우기
+            $("#username").val("");
+            $("#password").val("");
         }
     </script>
 </head>
