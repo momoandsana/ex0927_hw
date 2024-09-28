@@ -1,30 +1,32 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: swift
-  Date: 2024-09-27
-  Time: 오후 4:50
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
-    <style>
-        .nav-link{
-            color:blue;
-            text-decoration:none;
-        }
-        .nav-link:hover{
-            text-decoration:underline;
-            /*호버시 밑줄*/
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a class="nav-link" href="">게시판</a>
-        <a class="nav-link" href="">MyPage</a>
-        <a class="nav-link" href="">Q&A</a>
-    </nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">게시판</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">MyPage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Q&A</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 </body>
 </html>
