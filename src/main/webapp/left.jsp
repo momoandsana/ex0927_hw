@@ -53,6 +53,11 @@
                     location.href = "${pageContext.request.contextPath}/logout";
                 }
             });
+
+            // 로그인 성공 후 게시판을 새로고침하는 코드 추가
+            <c:if test="${not empty sessionScope.userId}">
+            window.parent.frames["center"].location.reload(); // center 프레임 새로고침
+            </c:if>
         });
     </script>
 </head>
