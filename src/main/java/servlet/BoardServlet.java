@@ -1,3 +1,5 @@
+package servlet;
+
 import dto.BoardDTO;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
