@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
             sb.append(s+"초");
 
             session.setAttribute("creationTime",sb.toString());
-            response.sendRedirect("LoginOk.jsp");
+            response.sendRedirect("left.jsp");
         }
         else
         {
