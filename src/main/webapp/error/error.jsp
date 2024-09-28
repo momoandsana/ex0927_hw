@@ -13,7 +13,7 @@
 <body>
   <script>
     alert("${requestScope.errMsg}");
-    location.href="${pageContext.request.contextPath}/left.jsp";
+    location.href="${pageContext.request.contextPath}/index.jsp";
   </script>
 
 </body>
