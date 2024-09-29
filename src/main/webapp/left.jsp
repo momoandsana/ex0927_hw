@@ -54,7 +54,7 @@
         $(function () {
             $("a").click(function () {
                 if (confirm("로그아웃할래?")) {
-                    // 로그아웃 요청
+                    // 로그아웃 리다이렉트
                     location.href = "${pageContext.request.contextPath}/logout";
                 }
             });
