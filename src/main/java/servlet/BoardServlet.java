@@ -28,7 +28,12 @@ public class BoardServlet extends HttpServlet {
          */
         ServletContext context = getServletContext();
         boardList=(List<BoardDTO>)context.getAttribute("boardList");
-        // 어플리케이션에 저장된 리스트를 꺼내서 전역변수에 넣는다
+        /*
+         어플리케이션에 저장된 리스트를 꺼내서 전역변수에 넣는다
+         최초의 한 번만 application 에서 보드의 주소를 가지고 오고 그것을 전역변수에 넣는다
+         나중에 새로운 글을 추가해도 다시 application 에서 다시 주소를 가지고 오는 것이 아니라
+         해당 주소를 아니까 거기에다가 추소만 해주면 된다
+         */
 
     }
 
@@ -48,7 +53,8 @@ public class BoardServlet extends HttpServlet {
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter out = resp.getWriter();
         out.println("<script>");
-        out.println("top.location.href='index.jsp';"); // 리다이렉션
+        out.println("top.location.href='index.jsp';");
+        // top 을 쓰면 최상위로 올라간다,다시 거기서 index.jsp 선택해서 리다이렉션
         out.println("</script>");
         out.close();
         /*
