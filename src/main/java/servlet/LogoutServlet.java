@@ -25,8 +25,12 @@ public class LogoutServlet extends HttpServlet {
         out.println("<html><head>");
         out.println("<script>");
         out.println("window.parent.frames['center'].location.reload();");
-        // center 프레임 새로 고침->로그아웃하면 세션 없어지니까 center 에서 글 작성 기능 제외해야 함
-        out.println("window.location.href = '/left.jsp';"); // left.jsp 로 리다이렉션, js 에서 리다이렉션해야 부분적인 부분만 리다이렉션이 제대로 된다
+        /*
+         center 프레임 새로 고침->로그아웃하면 세션 없어지니까 center 에서 글 작성 기능 제외해야 함
+         window 에 접근하기 위해서는 response(자바)로 리다이렉션으로는 가능하지 않고 자바스크립트 코드로 구현해야 한다
+         */
+        out.println("window.location.href = '/left.jsp';");
+        // left.jsp 로 리다이렉션, js 에서 리다이렉션해야 부분적인 부분만 리다이렉션이 제대로 된다
         out.println("</script>");
         out.println("</head><body></body></html>");
     }

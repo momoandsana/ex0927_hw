@@ -98,6 +98,8 @@
             <div>
                 <button type="submit" class="btn btn-primary">로그인</button>
                 <button type="button" class="btn btn-danger" onClick="clearFields()">취소</button>
+                <%--clearFields() 함수 : 이 부분은 자바스크립트에서 정의된 함수로, 버튼이 클릭될 때 실행됩니다.
+                보통 이 함수는 입력 필드나 폼의 값을 지우거나 초기화하는 기능을 수행합니다.--%>
             </div>
         </form>
     </c:otherwise>
