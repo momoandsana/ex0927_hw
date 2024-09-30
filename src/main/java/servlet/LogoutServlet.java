@@ -18,7 +18,7 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.invalidate();
 
-        // 로그아웃 후에 center.jsp를 새로 고치는 스크립트가 포함된 HTML 응답 코드. left 에서 해당 로직 만들면 문제가 생김
+        // 로그아웃 후에 center.jsp 를 새로 고치는 스크립트가 포함된 HTML 응답 코드. left 에서 해당 로직 만들면 문제가 생김
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
