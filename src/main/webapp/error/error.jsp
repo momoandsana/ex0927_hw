@@ -16,7 +16,6 @@
     <%
     System.out.println(request.getAttribute("errMsg"));
     %>
-
     location.href="${pageContext.request.contextPath}/index.jsp";
   </script>
 

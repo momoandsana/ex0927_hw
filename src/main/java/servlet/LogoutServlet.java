@@ -26,7 +26,7 @@ public class LogoutServlet extends HttpServlet {
         out.println("<script>");
         out.println("window.parent.frames['center'].location.reload();");
         // center 프레임 새로 고침->로그아웃하면 세션 없어지니까 center 에서 글 작성 기능 제외해야 함
-        out.println("window.location.href = '/left.jsp';"); // left.jsp로 리다이렉션
+        out.println("window.location.href = '/left.jsp';"); // left.jsp 로 리다이렉션
         out.println("</script>");
         out.println("</head><body></body></html>");
     }

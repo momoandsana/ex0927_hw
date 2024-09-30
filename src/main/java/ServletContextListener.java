@@ -22,6 +22,11 @@ public class ServletContextListener implements jakarta.servlet.ServletContextLis
 
         application.setAttribute("boardList",boardList);
         application.setAttribute("path",application.getContextPath());
+        /*
+        <a href="${applicationScope.path}/somePage.jsp">페이지 링크</a>
+        <img src="${applicationScope.path}/images/logo.png" alt="로고">
+        이런 식으로 활용 가능
+         */
 
     }
 

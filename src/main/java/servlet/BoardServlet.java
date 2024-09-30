@@ -51,5 +51,8 @@ public class BoardServlet extends HttpServlet {
         out.println("top.location.href='index.jsp';"); // 리다이렉션
         out.println("</script>");
         out.close();
+        /*
+        js 코드로 리다이렉션, 클라이언트에서 리다이렉션
+         */
     }
 }
