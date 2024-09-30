@@ -49,6 +49,7 @@
         </tr>
         </thead>
         <tbody>
+<%--        application.setAttribute("boardList",boardList);--%>
         <c:forEach items="${applicationScope.boardList}" var="board">
             <tr>
                 <td>${board.no}</td>

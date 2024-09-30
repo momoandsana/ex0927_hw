@@ -56,12 +56,15 @@
                 if (confirm("로그아웃할래?")) {
                     // 로그아웃 리다이렉트
                     location.href = "${pageContext.request.contextPath}/logout";
+                    <%--location.href = "${applicationScope.path}/logout";--%>
                 }
             });
 
             // 로그인 성공 후 게시판을 새로고침하는 코드 추가
             <c:if test="${not empty sessionScope.userId}">
-            window.parent.frames["center"].location.reload(); // center 프레임 새로고침
+            window.parent.frames["center"].location.reload();
+            // left 에서 로그인하면 center 의 글작성 기능이 가능해야 하니까 center 프레임 새로고침
+            // 그냥 부모 자체를 reload 해도 괜찮음
             </c:if>
         });
     </script>
@@ -83,12 +86,13 @@
         <form action="login" method="post">
             <div class="form-group">
                 <label for="userId">ID :</label>
-                <input type="text" id="userId" name="userId" required>
+                <input type="text" id="userId" name="userId" required size="10">
+<%--                여기서 size 는 입력 필드의 넓이--%>
             </div>
 
             <div class="form-group">
                 <label for="userPwd">PWD :</label>
-                <input type="password" id="userPwd" name="userPwd" required>
+                <input type="password" id="userPwd" name="userPwd" required size="10">
             </div>
 
             <div>
