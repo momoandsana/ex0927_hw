@@ -8,7 +8,7 @@ import java.util.List;
 
 @WebListener
 //웹 리스너는 특별한 설정 없이도 웹 어플리케이션이 시작할 때 같이 시작한다
-public class ServletContextListener implements jakarta.servlet.ServletContextListener {
+public class BoardListener implements jakarta.servlet.ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent e) {
         System.out.println("ServletContextListener.contextInitialized");
